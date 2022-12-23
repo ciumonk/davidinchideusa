@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Page with Google Translate</title>
+    <meta charset="utf-8">
+    <style>
+      /* Some optional styles to make the widget look nicer */
+      .goog-te-gadget-simple {
+        font-family: sans-serif;
+        font-size: 14px;
+        border: 1px solid #d5d5d5;
+        border-radius: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- The Google Translate widget will be inserted here -->
+
+    <!-- Include the Google Translate script -->
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <!-- Initialize the Google Translate widget -->
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+      }
+    </script>
+
+    <!-- Add a div to hold the widget -->
+    <div id="google_translate_element"></div>
+  </body>
+</html>
